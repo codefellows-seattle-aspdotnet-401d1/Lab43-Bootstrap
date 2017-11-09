@@ -11,10 +11,31 @@
     <img src="~/img/destiny22.png" />
 </div>
 
+<br />
 
-@foreach (var item in Model)
-{
-    <h3 class="guardian-info">@item.Gamertag | @item.DestinyClass: </h3>
-        <p>@item.Request</p>
-}
 
+<div class="container">
+    <div class="jumbotron">
+        <h2 class="display-3">Guardian Posts</h2>
+        <p class="lead">Below you'll find fellow guardians looking for fireteam members</p>
+        <hr class="my-4">
+        @foreach (var item in Model)
+            {
+            <h3>@item.Gamertag | @item.DestinyClass: </h3>
+            <p>@item.Request</p>
+        }
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" role="button" asp-controller="LFG" asp-action="Create">Post</a>
+        </p>
+    </div>
+</div>
+
+
+
+@*<div class="guardian-info">
+        @foreach (var item in Model)
+        {
+            <h3>@item.Gamertag | @item.DestinyClass: </h3>
+            <p>@item.Request</p>
+        }
+    </div>*@
