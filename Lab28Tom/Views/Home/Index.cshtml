@@ -1,0 +1,26 @@
+﻿@model List<Lab28Tom.Models.LFG>
+
+@{
+    Layout = "_Layout";
+}
+
+<div class="guardian-title">
+    <h1>Guardian LFG</h1>
+    <h2>Find your perfect fireteam and get that loot!</h2>
+
+    <img src="~/img/destiny22.png" />
+</div>
+
+
+@foreach (var item in Model)
+{
+    <h3 class="guardian-info">@item.Gamertag | @item.DestinyClass: </h3>
+        <p>@item.Request</p>
+}
+
+
+<div class="home-links">
+<h4><a asp-controller="LFG" asp-action="Create">Post</a></h4>
+<h4><a asp-controller="Account" asp-action="Login">Login</a></h4>
+<h4><a asp-controller="Account" asp-action="Register">Register</a></h4>
+</div>
