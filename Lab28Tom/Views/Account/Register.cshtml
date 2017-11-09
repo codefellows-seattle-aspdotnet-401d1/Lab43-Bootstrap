@@ -1,0 +1,33 @@
+﻿@model Lab28Tom.Models.RegisterViewModel
+@{
+    Layout = "_Layout";
+}
+
+<form asp-route-returnUrl="@ViewData["ReturnUrl"]" method="post">
+
+    <div asp-validation-summary="All"></div>
+    <h4>Create An Account </h4>
+
+    <label asp-for="Email"></label>
+    <input asp-for="Email" />
+    <span asp-validation-for="Email"></span> <br /> <br />
+
+    <label asp-for="Password"></label>
+    <input asp-for="Password" />
+    <span asp-validation-for="Password"></span><br /> <br />
+
+    <label asp-for="ConfirmPassword"></label>
+    <input asp-for="ConfirmPassword" />
+    <span asp-validation-for="ConfirmPassword"></span><br /> <br />
+
+    <label asp-for="DestinyBirthday"></label>
+    <input asp-for="DestinyBirthday" />
+    <span asp-validation-for="DestinyBirthday"></span><br /> <br />
+
+    <label asp-for="PowerLevel"></label>
+    <input asp-for="PowerLevel" />
+    <span asp-validation-for="PowerLevel"></span><br /> <br />
+
+    <button type="submit">Register</button>
+
+</form>
