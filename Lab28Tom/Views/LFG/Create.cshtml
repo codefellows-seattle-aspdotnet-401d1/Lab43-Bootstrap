@@ -4,6 +4,10 @@
     ViewData["Title"] = "Create";
 }
 
+@{
+    Layout = "_Layout";
+}
+
 <h2>Create</h2>
 
 <h4>LFG</h4>
@@ -38,6 +42,6 @@
     <a asp-action="Index">View List</a>
 </div>
 
-@section Scripts {
+@*@section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+}*@
