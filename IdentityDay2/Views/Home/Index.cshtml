@@ -1,0 +1,31 @@
+﻿@model List<IdentityDay2.Models.CMS>
+
+@{
+    Layout = "_Layout";
+}
+<div class="jumbotron">
+    <h1 class="text-center text-primary">Communication is key.</h1>
+    <p class="text-center text-info">Ship-Wide comms at a glance.</p>
+</div>
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
+            {
+            @if (item.IsAuthorized)
+                {
+                <div class="col-lg-4 text-center">
+                    @if (item.Channel == IdentityDay2.Models.Channel.ShipWide)
+                    {
+                        <strong class="shipwide">@item.Channel:</strong>
+                        <p class="alertmsg">@item.Content</p>
+                    }
+                    else
+                    {
+                        <strong>@item.Channel:</strong>
+                        <p>@item.Content</p>
+                    }
+                </div>
+            }
+        }
+    </div>
+</div>
