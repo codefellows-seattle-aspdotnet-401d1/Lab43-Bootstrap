@@ -1,0 +1,11 @@
+C:\Users\Georg\OneDrive\Documents\GitHub\Lab43-Bootstrap\Lab43George\Lab43George\bin\Debug\netcoreapp2.0\Lab43George.deps.json
+C:\Users\Georg\OneDrive\Documents\GitHub\Lab43-Bootstrap\Lab43George\Lab43George\bin\Debug\netcoreapp2.0\Lab43George.runtimeconfig.json
+C:\Users\Georg\OneDrive\Documents\GitHub\Lab43-Bootstrap\Lab43George\Lab43George\bin\Debug\netcoreapp2.0\Lab43George.runtimeconfig.dev.json
+C:\Users\Georg\OneDrive\Documents\GitHub\Lab43-Bootstrap\Lab43George\Lab43George\bin\Debug\netcoreapp2.0\Lab43George.dll
+C:\Users\Georg\OneDrive\Documents\GitHub\Lab43-Bootstrap\Lab43George\Lab43George\bin\Debug\netcoreapp2.0\Lab43George.pdb
+C:\Users\Georg\OneDrive\Documents\GitHub\Lab43-Bootstrap\Lab43George\Lab43George\obj\Debug\netcoreapp2.0\Lab43George.csprojResolveAssemblyReference.cache
+C:\Users\Georg\OneDrive\Documents\GitHub\Lab43-Bootstrap\Lab43George\Lab43George\obj\Debug\netcoreapp2.0\Lab43George.csproj.CoreCompileInputs.cache
+C:\Users\Georg\OneDrive\Documents\GitHub\Lab43-Bootstrap\Lab43George\Lab43George\obj\Debug\netcoreapp2.0\Lab43George.AssemblyInfoInputs.cache
+C:\Users\Georg\OneDrive\Documents\GitHub\Lab43-Bootstrap\Lab43George\Lab43George\obj\Debug\netcoreapp2.0\Lab43George.AssemblyInfo.cs
+C:\Users\Georg\OneDrive\Documents\GitHub\Lab43-Bootstrap\Lab43George\Lab43George\obj\Debug\netcoreapp2.0\Lab43George.dll
+C:\Users\Georg\OneDrive\Documents\GitHub\Lab43-Bootstrap\Lab43George\Lab43George\obj\Debug\netcoreapp2.0\Lab43George.pdb
