@@ -1,0 +1,50 @@
+﻿@using System.Security.Claims;
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <environment names="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/StyleSheet.css" />
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/StyleSheet.css" asp-append-version="true" />
+    </environment>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">ShipCom</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a asp-controller="CMS" asp-action="create">Post a Message</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                @if (!User.Identities.Any(u => u.IsAuthenticated))
+                {
+                    <li><a asp-controller="CrewAuth" asp-action="Register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a asp-controller="CrewAuth" asp-action="Login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                }
+                else
+                {
+                    <li class="navbar-text">
+                        Hello @User.Identities.First(u => u.IsAuthenticated &&
+                  u.HasClaim(c => c.Type == ClaimTypes.Name)).FindFirst(ClaimTypes.Name).Value
+                    </li>
+
+                }</ul>
+        </div>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
